@@ -10,6 +10,7 @@ img{
 
 body{
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
 }
 
 /*COMMON*/
@@ -17,27 +18,38 @@ body{
     width: 100%;
     height: 100vh;
     background-color: black;
-    /*DEBUG*/
-    border: 2px solid black;
+}
+
+/*SECTION*/
+.options{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5px;
+}
+
+.option{
+    font-size: 0.8rem;
+    background-color: grey;
+    padding: 0.2rem;
+    border-radius: 5px;
+    margin-right: 8px;
 }
 
 /*MAIN*/
 .container-cards{
     width: 90%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /*DEBUG*/
-    border: 2px solid red;
 }
 
 .cards{
     width: calc(94% / 7);
-    margin-bottom: 10px;
-    /*DEBUG*/
-    border: 2px solid blue;
+    margin-bottom: 8px;
 }
 
 .profile img{
@@ -59,3 +71,67 @@ body{
     color: white;
     background-color: rgba(126, 126, 126, 0.5);
 }
+
+/*FOOTER*/
+.actions{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: hsl(0deg 0% 13.33%);
+    display: flex;
+    color: white;
+}
+
+.main-actions{
+    width: 20%;
+    display: flex;
+}
+
+.more-actions{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.close{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.action{
+    padding-top: .6rem;
+    padding-left: .6rem;
+    padding-right: .6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    font-size: 1.2rem;
+   
+}
+
+.icon-name{
+    font-size: .8rem;
+    padding-top: 0.2rem;
+}
+
+.close-call{
+    background-color: red;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 0.3rem 0.4rem;
+}
+
+.icon-alone{
+    font-size: 0.8rem;
+    position: relative;
+    top: 15px;
+}
+
