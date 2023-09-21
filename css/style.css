@@ -7,3 +7,55 @@
 img{
     max-width: 100%;
 }
+
+body{
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*COMMON*/
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /*DEBUG*/
+    border: 2px solid black;
+}
+
+/*MAIN*/
+.container-cards{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*DEBUG*/
+    border: 2px solid red;
+}
+
+.cards{
+    width: calc(94% / 7);
+    margin-bottom: 10px;
+    /*DEBUG*/
+    border: 2px solid blue;
+}
+
+.profile img{
+    display: block;
+}
+
+.profile{
+    position: relative;
+}
+
+.name{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    padding: 3px 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 0.8rem;
+    color: white;
+    background-color: rgba(126, 126, 126, 0.5);
+}
